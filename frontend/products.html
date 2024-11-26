@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Products</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="products.html">Products</a>
+    </nav>
+    <div>
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search products...">
+        <!-- Sorting Options -->
+        <select id="sort">
+            <option value="name">Sort by Name</option>
+            <option value="price">Sort by Price</option>
+        </select>
+        <!-- Category Filter -->
+        <select id="category-filter">
+            <option value="">All Categories</option>
+            <option value="Computers">Computers</option>
+            <option value="Mobile Devices">Mobile Devices</option>
+            <option value="Audio">Audio</option>
+            <option value="Wearables">Wearables</option>
+            <option value="Photography">Photography</option>
+            <option value="Office Supplies">Office Supplies</option>
+            <option value="Storage">Storage</option>
+            <option value="Networking">Networking</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Smart Home">Smart Home</option>
+            <option value="Kitchen Appliances">Kitchen Appliances</option>
+            <option value="Home Appliances">Home Appliances</option>
+            <option value="Personal Care">Personal Care</option>
+        </select>
+    </div>
+    <ul id="product-list">
+        <li data-category="Computers"><strong>1.</strong> Laptop - A high-performance laptop - $1200</li>
+        <li data-category="Mobile Devices"><strong>2.</strong> Smartphone - A latest model smartphone - $800</li>
+        <li data-category="Audio"><strong>3.</strong> Headphones - Noise-cancelling headphones - $150</li>
+        <li data-category="Mobile Devices"><strong>4.</strong> Tablet - A lightweight tablet - $300</li>
+        <li data-category="Wearables"><strong>5.</strong> Smartwatch - A smartwatch with various features - $250</li>
+        <li data-category="Photography"><strong>6.</strong> Camera - A digital camera with high resolution - $500</li>
+        <li data-category="Office Supplies"><strong>7.</strong> Printer - A multifunctional printer - $200</li>
+        <li data-category="Computers"><strong>8.</strong> Monitor - A 24-inch monitor - $180</li>
+        <li data-category="Computers"><strong>9.</strong> Keyboard - A mechanical keyboard - $100</li>
+        <li data-category="Computers"><strong>10.</strong> Mouse - A wireless mouse - $50</li>
+        <li data-category="Storage"><strong>11.</strong> External Hard Drive - A 1TB external hard drive - $80</li>
+        <li data-category="Storage"><strong>12.</strong> USB Flash Drive - A 64GB USB flash drive - $20</li>
+        <li data-category="Networking"><strong>13.</strong> Router - A high-speed wireless router - $120</li>
+        <li data-category="Audio"><strong>14.</strong> Speakers - A set of stereo speakers - $70</li>
+        <li data-category="Computers"><strong>15.</strong> Webcam - A HD webcam - $60</li>
+        <li data-category="Furniture"><strong>16.</strong> Desk Chair - An ergonomic desk chair - $150</li>
+        <li data-category="Furniture"><strong>17.</strong> Desk Lamp - A LED desk lamp - $40</li>
+        <li data-category="Office Supplies"><strong>18.</strong> Notebook - A spiral notebook - $5</li>
+        <li data-category="Office Supplies"><strong>19.</strong> Pen - A ballpoint pen - $2</li>
+        <li data-category="Office Supplies"><strong>20.</strong> Stapler - A heavy-duty stapler - $15</li>
+        <li data-category="Gaming"><strong>21.</strong> Gaming Console - A next-gen gaming console - $500</li>
+        <li data-category="Gaming"><strong>22.</strong> VR Headset - A virtual reality headset - $300</li>
+        <li data-category="Smart Home"><strong>23.</strong> Smart Light Bulb - A smart light bulb with app control - $25</li>
+        <li data-category="Wearables"><strong>24.</strong> Fitness Tracker - A fitness tracker with heart rate monitor - $100</li>
+        <li data-category="Kitchen Appliances"><strong>25.</strong> Electric Kettle - A fast-boiling electric kettle - $30</li>
+        <li data-category="Kitchen Appliances"><strong>26.</strong> Blender - A high-speed blender - $60</li>
+        <li data-category="Kitchen Appliances"><strong>27.</strong> Coffee Maker - A programmable coffee maker - $80</li>
+        <li data-category="Home Appliances"><strong>28.</strong> Air Purifier - An air purifier with HEPA filter - $150</li>
+        <li data-category="Personal Care"><strong>29.</strong> Electric Toothbrush - An electric toothbrush with multiple modes - $40</li>
+        <li data-category="Personal Care"><strong>30.</strong> Hair Dryer - A powerful hair dryer - $50</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>

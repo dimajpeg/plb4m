@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Warehouse Management</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="products.html">Products</a>
+    </nav>
+    <!-- Фильтр по категориям -->
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter">
+        <option value="all">All</option>
+        <option value="Computers">Computers</option>
+        <option value="Mobile Devices">Mobile Devices</option>
+        <option value="Audio">Audio</option>
+        <option value="Wearables">Wearables</option>
+        <option value="Photography">Photography</option>
+        <option value="Office Supplies">Office Supplies</option>
+        <option value="Storage">Storage</option>
+        <option value="Networking">Networking</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Smart Home">Smart Home</option>
+        <option value="Kitchen Appliances">Kitchen Appliances</option>
+        <option value="Home Appliances">Home Appliances</option>
+        <option value="Personal Care">Personal Care</option>
+    </select>
+    <!-- Список товаров -->
+    <ul id="product-list">
+        <li data-id="1" data-name="Laptop" data-price="1200" data-category="Computers">
+            <strong>Laptop</strong> - $1200 - A high-performance laptop
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="1" data-name="Laptop" data-price="1200" data-category="Computers">Add to Cart</button>
+        </li>
+        <li data-id="2" data-name="Smartphone" data-price="800" data-category="Mobile Devices">
+            <strong>Smartphone</strong> - $800 - A latest model smartphone
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="2" data-name="Smartphone" data-price="800" data-category="Mobile Devices">Add to Cart</button>
+        </li>
+        <li data-id="3" data-name="Headphones" data-price="150" data-category="Audio">
+            <strong>Headphones</strong> - $150 - Noise-cancelling headphones
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="3" data-name="Headphones" data-price="150" data-category="Audio">Add to Cart</button>
+        </li>
+        <li data-id="4" data-name="Tablet" data-price="300" data-category="Mobile Devices">
+            <strong>Tablet</strong> - $300 - A lightweight tablet
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="4" data-name="Tablet" data-price="300" data-category="Mobile Devices">Add to Cart</button>
+        </li>
+        <li data-id="5" data-name="Smartwatch" data-price="250" data-category="Wearables">
+            <strong>Smartwatch</strong> - $250 - A smartwatch with various features
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="5" data-name="Smartwatch" data-price="250" data-category="Wearables">Add to Cart</button>
+        </li>
+        <li data-id="6" data-name="Camera" data-price="500" data-category="Photography">
+            <strong>Camera</strong> - $500 - A digital camera with high resolution
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="6" data-name="Camera" data-price="500" data-category="Photography">Add to Cart</button>
+        </li>
+        <li data-id="7" data-name="Printer" data-price="200" data-category="Office Supplies">
+            <strong>Printer</strong> - $200 - A multifunctional printer
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="7" data-name="Printer" data-price="200" data-category="Office Supplies">Add to Cart</button>
+        </li>
+        <li data-id="8" data-name="Monitor" data-price="180" data-category="Computers">
+            <strong>Monitor</strong> - $180 - A 24-inch monitor
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="8" data-name="Monitor" data-price="180" data-category="Computers">Add to Cart</button>
+        </li>
+        <li data-id="9" data-name="Keyboard" data-price="100" data-category="Computers">
+            <strong>Keyboard</strong> - $100 - A mechanical keyboard
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="9" data-name="Keyboard" data-price="100" data-category="Computers">Add to Cart</button>
+        </li>
+        <li data-id="10" data-name="Mouse" data-price="50" data-category="Computers">
+            <strong>Mouse</strong> - $50 - A wireless mouse
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="10" data-name="Mouse" data-price="50" data-category="Computers">Add to Cart</button>
+        </li>
+        <li data-id="11" data-name="External Hard Drive" data-price="80" data-category="Storage">
+            <strong>External Hard Drive</strong> - $80 - A 1TB external hard drive
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="11" data-name="External Hard Drive" data-price="80" data-category="Storage">Add to Cart</button>
+        </li>
+        <li data-id="12" data-name="USB Flash Drive" data-price="20" data-category="Storage">
+            <strong>USB Flash Drive</strong> - $20 - A 64GB USB flash drive
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="12" data-name="USB Flash Drive" data-price="20" data-category="Storage">Add to Cart</button>
+        </li>
+        <li data-id="13" data-name="Router" data-price="120" data-category="Networking">
+            <strong>Router</strong> - $120 - A high-speed wireless router
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="13" data-name="Router" data-price="120" data-category="Networking">Add to Cart</button>
+        </li>
+        <li data-id="14" data-name="Speakers" data-price="70" data-category="Audio">
+            <strong>Speakers</strong> - $70 - A set of stereo speakers
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="14" data-name="Speakers" data-price="70" data-category="Audio">Add to Cart</button>
+        </li>
+        <li data-id="15" data-name="Webcam" data-price="60" data-category="Computers">
+            <strong>Webcam</strong> - $60 - A HD webcam
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="15" data-name="Webcam" data-price="60" data-category="Computers">Add to Cart</button>
+        </li>
+        <li data-id="16" data-name="Desk Chair" data-price="150" data-category="Furniture">
+            <strong>Desk Chair</strong> - $150 - An ergonomic desk chair
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="16" data-name="Desk Chair" data-price="150" data-category="Furniture">Add to Cart</button>
+        </li>
+        <<li data-id="16" data-name="Desk Chair" data-price="150" data-category="Furniture">
+            <strong>Desk Chair</strong> - $150 - An ergonomic desk chair
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="16" data-name="Desk Chair" data-price="150" data-category="Furniture">Add to Cart</button>
+        </li>
+        <li data-id="17" data-name="Desk Lamp" data-price="40" data-category="Furniture">
+            <strong>Desk Lamp</strong> - $40 - A LED desk lamp
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="17" data-name="Desk Lamp" data-price="40" data-category="Furniture">Add to Cart</button>
+        </li>
+        <li data-id="18" data-name="Notebook" data-price="5" data-category="Office Supplies">
+            <strong>Notebook</strong> - $5 - A spiral notebook
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="18" data-name="Notebook" data-price="5" data-category="Office Supplies">Add to Cart</button>
+        </li>
+        <li data-id="19" data-name="Pen" data-price="2" data-category="Office Supplies">
+            <strong>Pen</strong> - $2 - A ballpoint pen
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="19" data-name="Pen" data-price="2" data-category="Office Supplies">Add to Cart</button>
+        </li>
+        <li data-id="20" data-name="Stapler" data-price="15" data-category="Office Supplies">
+            <strong>Stapler</strong> - $15 - A heavy-duty stapler
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="20" data-name="Stapler" data-price="15" data-category="Office Supplies">Add to Cart</button>
+        </li>
+        <li data-id="21" data-name="Gaming Console" data-price="500" data-category="Gaming">
+            <strong>Gaming Console</strong> - $500 - A next-gen gaming console
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="21" data-name="Gaming Console" data-price="500" data-category="Gaming">Add to Cart</button>
+        </li>
+        <li data-id="22" data-name="VR Headset" data-price="300" data-category="Gaming">
+            <strong>VR Headset</strong> - $300 - A virtual reality headset
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="22" data-name="VR Headset" data-price="300" data-category="Gaming">Add to Cart</button>
+        </li>
+        <li data-id="23" data-name="Smart Light Bulb" data-price="25" data-category="Smart Home">
+            <strong>Smart Light Bulb</strong> - $25 - A smart light bulb with app control
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="23" data-name="Smart Light Bulb" data-price="25" data-category="Smart Home">Add to Cart</button>
+        </li>
+        <li data-id="24" data-name="Fitness Tracker" data-price="100" data-category="Wearables">
+            <strong>Fitness Tracker</strong> - $100 - A fitness tracker with heart rate monitor
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="24" data-name="Fitness Tracker" data-price="100" data-category="Wearables">Add to Cart</button>
+        </li>
+        <li data-id="25" data-name="Electric Kettle" data-price="30" data-category="Kitchen Appliances">
+            <strong>Electric Kettle</strong> - $30 - A fast-boiling electric kettle
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="25" data-name="Electric Kettle" data-price="30" data-category="Kitchen Appliances">Add to Cart</button>
+        </li>
+        <li data-id="26" data-name="Blender" data-price="60" data-category="Kitchen Appliances">
+            <strong>Blender</strong> - $60 - A high-speed blender
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="26" data-name="Blender" data-price="60" data-category="Kitchen Appliances">Add to Cart</button>
+        </li>
+        <li data-id="27" data-name="Coffee Maker" data-price="80" data-category="Kitchen Appliances">
+            <strong>Coffee Maker</strong> - $80 - A programmable coffee maker
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="27" data-name="Coffee Maker" data-price="80" data-category="Kitchen Appliances">Add to Cart</button>
+        </li>
+        <li data-id="28" data-name="Air Purifier" data-price="150" data-category="Home Appliances">
+            <strong>Air Purifier</strong> - $150 - An air purifier with HEPA filter
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="28" data-name="Air Purifier" data-price="150" data-category="Home Appliances">Add to Cart</button>
+        </li>
+        <li data-id="29" data-name="Electric Toothbrush" data-price="40" data-category="Personal Care">
+            <strong>Electric Toothbrush</strong> - $40 - An electric toothbrush with multiple modes
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="29" data-name="Electric Toothbrush" data-price="40" data-category="Personal Care">Add to Cart</button>
+        </li>
+        <li data-id="30" data-name="Hair Dryer" data-price="50" data-category="Personal Care">
+            <strong>Hair Dryer</strong> - $50 - A powerful hair dryer
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="add-to-cart" data-id="30" data-name="Hair Dryer" data-price="50" data-category="Personal Care">Add to Cart</button>
+        </li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
